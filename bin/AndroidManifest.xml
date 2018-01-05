@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.examandroid.ui"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_SMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.SEND_SMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_SMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/pic87387907"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WordManageActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".WordShowActivity"
+            android:label="@string/app_name" >
+        </activity>
+          <!-- 1.2.	在AndroidManifest.xml当中将WordListActivity进行注册。 -->
+        
+       
+        <activity
+            android:name=".DrawViewActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".SMSSendActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".SMSGetActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".MusicActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".Prefs"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".DrawPanel"
+            android:label="@string/app_name" >
+        </activity>
+
+        <provider
+            android:name="com.examandroid.db.DictProvider"
+            android:authorities="com.examandroid.db.DictProvider"
+            android:exported="true" />
+    </application>
+
+</manifest>
